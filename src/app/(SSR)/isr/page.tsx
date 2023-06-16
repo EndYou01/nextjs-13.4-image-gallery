@@ -1,5 +1,5 @@
 
-import { UnslpashImage } from "@/models/unsplash-image";
+import { UnsplashImage } from "@/models/unsplash-image";
 import Image from "next/image";
 import Link from "next/link";
 import { Alert } from "@/components/bootstrap";
@@ -15,7 +15,7 @@ export default async function Page() {
         {
             // next: { revalidate: 15 }
         });
-    const image: UnslpashImage = await response.json();
+    const image: UnsplashImage = await response.json();
 
     const width = Math.min(500, image.width);
     const height = (width / image.width) * image.height;

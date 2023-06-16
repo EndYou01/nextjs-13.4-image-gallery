@@ -1,4 +1,4 @@
-export interface UnslpashImage {
+export interface UnsplashImage {
     description: string,
     user: {
         username: string
@@ -8,4 +8,9 @@ export interface UnslpashImage {
     },
     width: number,
     height: number,
+}
+
+
+export interface UnsplashedSearchResponse{
+    results: UnsplashImage[]
 }
